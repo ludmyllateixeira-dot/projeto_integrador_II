@@ -1,267 +1,179 @@
+# SITRIB — Sistema de Inteligência Tributária (Palmas/TO)
 
-# Projeto Integrador (PI) - Sprint 1
-=======
-Projeto Integrador (PI) - Sprint 1
-
-1. Orientações Gerais da Atividade
-Esta atividade tem como objetivo consolidar os conceitos trabalhados em sala de aula
-(Metodologias Ágeis/Scrum, Engenharia de Requisitos, Git e Estruturação de Projetos),
-aplicando-os diretamente ao Projeto Integrador do semestre. Os grupos (compostos por 5
-integrantes) devem estruturar a base do projeto, estabelecer os papéis de liderança técnica e
-de negócio, mapear os requisitos com critérios de aceitação e comprovar a colaboração
-individual no controle de versão.
-
-1.1. Itens Obrigatórios de Entrega
-
-● Repositório no GitHub: Criação de repositório da equipe com estrutura inicial de
-diretórios para projeto em Python (ex.: pasta de código-fonte src/, pasta de
-documentação docs/, arquivo .gitignore para Python e arquivo de dependências
-requirements.txt ou pyproject.toml).
-
-● Comprovação de Participação Individual (Git): Todos os 5 membros devem ser
-colaboradores do repositório e possuir histórico de contribuições registrado (commits).
-Deve ser anexado um print/captura de tela da aba Insights > Contributors ou do
-histórico de Commits do repositório, evidenciando o autor e a mensagem de commit de
-cada estudante.
-
-● Definição e Justificativa de Papéis: Designação do Product Owner (PO) e do Scrum
-Master (SM), acompanhada da fundamentação teórica de suas atribuições.
-
-● Mapeamento de Requisitos Funcionais: Especificação de no mínimo 10 Requisitos
-Funcionais (RF) estruturados com seus respectivos Critérios de Aceite testáveis.
-
-● Requisitos Não Funcionais: Mapeamento de 3 a 5 Requisitos Não Funcionais (RNF)
-voltados a restrições de tecnologia, usabilidade e portabilidade.
-
-● Matriz de Priorização MoSCoW: Classificação de todo o escopo levantado nas
-categorias Must Have, Should Have, Could Have e Won't Have.
-
-● Modelagem UML (Opcional): Inclusão de diagramas (Casos de Uso, Classes ou
-Sequência) na pasta docs/ como documentação de apoio.
-
-2. Roteiro e Template de Preenchimento da Equipe
-
-(A equipe deve transcrever e preencher as seções a seguir diretamente no README.md do
-repositório ou em documento estruturado dentro da pasta /docs).
-
-2.1. Identificação da Equipe e Links
-
-Nome do Integrante Matrícula Usuário GitHub (@) Papel Principal no Time
-
-[Nome Completo 1] [Matrícula] @usuario1 Product Owner (PO)
-[Sofia Barros de Jesus] [2026111954] @24sofiabarros Scrum Master (SM)
-[Nome Completo 3] [Matrícula] @usuario3 Desenvolvedor / Equipe Técnica
-[Nome Completo 4] [Matrícula] @usuario4 Desenvolvedor / Equipe
-Técnica
-[Nome Completo 5] [Matrícula] @usuario5 Desenvolvedor / Equipe
-Técnica
-
-Link do Repositório GitHub: https://github.com/usuario/nome-do-repositorio
-
-2.2. Fundamentação e Dinâmica dos Papéis Ágeis
-
-A) Product Owner (PO)
-1. Quem é o Product Owner da equipe?
-2. Quais são as principais atribuições e responsabilidades do PO perante o Projeto Integrador?
-(Ex.: domínio das regras de negócio, interface com o cliente/professor, priorização contínua do
-Backlog e validação das entregas segundo os critérios de aceite).
-3.Como o PO validará se as funcionalidades entregues pelos desenvolvedores realmente
-cumprem o propósito do projeto?
-
-B) Scrum Master (SM)
-1. Quem é o Scrum Master da equipe?
-2. Quais são as responsabilidades do Scrum Master na condução do time?
-3. Qual será o canal de comunicação oficial da equipe e a frequência dos alinhamentos
-semanais?
-
-2.3. Especificação de Requisitos Funcionais (RF)
-
-Apresente no mínimo 5 requisitos funcionais do sistema. Cada requisito deve ter uma
-descrição clara (ou formato de História de Usuário) e critérios de aceite objetivos e testáveis.
-
-ID Nome do Requisito Descrição / História de Usuário Critérios de Aceite
-(Validação)
-
-RF01 Cadastro de Usuário O sistema deve permitir o registro de
-novos usuários com e-mail, nome e senha.
-1. E-mail deve ser validado e
-único.
-2. Senha deve possuir tamanho
-mínimo.
-3. Retornar mensagem clara de
-confirmação.
-
-RF02 Autenticação no Sistema O sistema deve autenticar usuários
-registrados via credenciais válidas.
-1. Credenciais corretas liberam
-a sessão.
-2. Credenciais inválidas alertam
-o usuário.
-
-RF5 [Nome RF5] [Descrição detalhada] [Regras para considerar pronto]
-
-2.4. Requisitos Não Funcionais (RNF)
-
-Especifique de 3 a 5 requisitos não funcionais aplicáveis ao projeto (tecnologia, interface, portabilidade ou boas práticas).
-ID Categoria Descrição da Restrição Métrica / Forma de Teste
-
-RNF01 Tecnologia / Backend O sistema deve ser desenvolvido
-obrigatoriamente utilizando a linguagem
-Python Compatível com Python 3.12+.
-
-RNF02 Portabilidade As dependências devem estar isoladas e
-descritas em arquivo de manifesto de
-pacotes.
-Instalação com comando padrão via requirements.txt.
-
-RNF03 Usabilidade O sistema deve fornecer mensagens claras
-de sucesso ou erro para todas as ações do
-usuário.
-Feedback visual/textual imediato em todas as operações.
-
-RNF04 Documentação O README.md deve conter instruções
-completas de instalação, configuração e
-Reproducibilidade do setup por terceiros sem
-
-ID Categoria Descrição da Restrição Métrica / Forma de Teste
-execução. erros.
-
-2.5. Matriz de Priorização MoSCoW
-
-Classifique os requisitos funcionais e não funcionais em suas respectivas categorias de
-prioridade para a primeira iteração do semestre:
-
-● Must Have (Indispensável para o MVP): [Listar IDs dos requisitos fundamentais, ex.:
-RF01, RF02, RNF01]
-● Should Have (Importante, alta prioridade): [Listar IDs dos requisitos de alto valor, ex.:
-RF03, RF05, RNF03]
-● Could Have (Desejável, se houver tempo hábil): [Listar IDs de melhorias secundárias,
-ex.: RF08, RNF04]
-● Won't Have (Fora do escopo desta entrega): [Listar IDs de funcionalidades
-descartadas/adiadas para versões futuras]
-
-2.6. Comprovação de Contribuições no Git
-
-Para garantir que todos os 5 integrantes colaboraram ativamente e utilizaram o versionamento
-de código, a equipe deve incluir nesta seção (ou anexar como imagem na pasta docs/ e exibir
-no README):
-
-1. Print do Painel de Contribuidores: Captura de tela da página do repositório em Insights
-> Contributors (ou Network), demonstrando o nome/login dos 5 integrantes com seus
-respectivos commits.
-
-2. Print do Histórico de Commits: Captura de tela da listagem de commits do branch
-principal (main), exibindo a mensagem descritiva e o autor de cada alteração.
-
-2.7. Documentação Complementar e Modelagem UML (Opcional)
-
-Espaço destinado a equipes que queiram adicionar os diagramas UML desenvolvidos em aula 
-(Casos de Uso, Classes e/ou Sequência). Imagens ou links para os arquivos dentro de docs/
-podem ser inseridos aqui para bonificação na avaliação.
-
-3. Rubrica de Avaliação da Atividade
-4. 
-Critério Descrição do Atendimento Peso
-Engenharia de
-Requisitos Definição clara de pelo menos 10 RFs com critérios de
-aceite testáveis e 3 a 5 RNFs consistentes. 35%
-Papéis Ágeis e
-Priorização
-Definição justificada de PO e SM e aplicação correta
-da matriz MoSCoW.
-25%
-Repositório e
-Estrutura Inicial
-Repositório bem estruturado com pastas Python,
-README completo e organização limpa.
-20%
-Colaboração Git
-(Prints)
-Comprovação de contribuição individual de todos os 5
-integrantes via histórico de commits.
-20%
-Bônus: Modelagem
-UML
-Inclusão coerente de diagrama
-
-Este repositório contém a entrega da Sprint 1, abordando o Setup Ágil, Engenharia de Requisitos, Repositório Git e estruturação inicial em MVC..
-
-## 2.1. Identificação da Equipe e Links
-
-| Nome do Integrante | Matrícula | Usuário GitHub (@) | Papel Principal no Time |
-| :--- | :--- | :--- | :--- |
-| Ludmylla | [Matrícula] | [@github_da_ludmylla] | [Definir Papel - PO/SM/Dev] |
-| Sofia | [Matrícula] | [@github_da_sofia] | [Definir Papel - PO/SM/Dev] |
-| Vitória | [Matrícula] | [@github_da_vitoria] | [Definir Papel - PO/SM/Dev] |
-| Maiara | [Matrícula] | [@github_da_maiara] | [Definir Papel - PO/SM/Dev] |
-| Hyago | [Matrícula] | [@github_do_hyago] | [Definir Papel - PO/SM/Dev] |
-
-**Link do Repositório GitHub:** https://github.com/ludmyllateixeira-dot/projeto_integrador_II
+**Universidade Federal do Tocantins (UFT)**  
+**Bacharelado Interdisciplinar em Inteligência Artificial (BIINAR)**  
+**Eixo II — Projeto Integrador: Secretaria Municipal de Finanças (SEFIN Palmas)**  
+**Período:** 2026/2  
+**Coordenação:** Prof. Dr. David Nadler Prata  
 
 ---
 
-## 2.2. Fundamentação e Dinâmica dos Papéis Ágeis
+## 👥 Identificação da Equipe e Papéis Ágeis
 
-### A) Product Owner (PO)
-1. **Quem é o Product Owner da equipe?**
-   [Nome do Integrante PO]
-2. **Quais são as principais atribuições e responsabilidades do PO perante o Projeto Integrador?**
-   [Preencher fundamentação]
-3. **Como o PO validará se as funcionalidades entregues cumprem o propósito do projeto?**
-   [Preencher validação]
-
-### B) Scrum Master (SM)
-1. **Quem é o Scrum Master da equipe?**
-   [Nome do Integrante SM]
-2. **Quais são as responsabilidades do Scrum Master na condução do time?**
-   [Preencher responsabilidades]
-3. **Qual será o canal de comunicação oficial da equipe e a frequência dos alinhamentos semanais?**
-   [Preencher comunicação]
+| Integrante | Matrícula | GitHub | Papel Ágil | Frente Técnica Principal |
+| :--- | :---: | :---: | :---: | :--- |
+| **Sofia Barros de Jesus** | 2026111954 | [`@24sofiabarros`](https://github.com/24sofiabarros) | **Scrum Master (SM)** | Orquestração do Pipeline ETL e Gestão do Repositório |
+| **Ludmylla Teixeira** | 2026111980 | [`@ludmyllateixeira-dot`](https://github.com/ludmyllateixeira-dot) | **Product Owner (PO)** | Modelagem de Regras de Negócio e Arquitetura do Domínio |
+| **Vitória Lopes** | 2026112100 | [`@vitiriaalopes123-source`](https://github.com/vitiriaalopes123-source) | **Desenvolvedora** | Análise Exploratória (EDA) e Painel MVP (Streamlit) |
+| **Hyago Herrcolis Queiroz** | 2026112200 | [`@hyagoqueiroz-coder`](https://github.com/hyagoqueiroz-coder) | **Desenvolvedor** | Modelagem de Machine Learning e Motor de Scoring |
+| **Maiara dos Santos** | 2026112300 | [`@maiarasantos-dev`](https://github.com/maiarasantos-dev) | **Desenvolvedora** | Governança de Dados, Auditoria LGPD e Testes de Qualidade |
 
 ---
 
-## 2.3. Especificação de Requisitos Funcionais (RF)
-*(A ser preenchido pela Vitória)*
+## 🎯 Objetivo do Sistema
 
-| ID | Nome do Requisito | Descrição / História de Usuário | Critérios de Aceite (Validação) |
-| :--- | :--- | :--- | :--- |
-| **RF01** | [Nome RF01] | [Descrição] | 1. [Critério 1] <br> 2. [Critério 2] |
-| **RF02** | [Nome RF02] | [Descrição] | 1. [Critério 1] <br> 2. [Critério 2] |
-| **RF03** | [Nome RF03] | [Descrição] | 1. [Critério 1] <br> 2. [Critério 2] |
-| **RF04** | [Nome RF04] | [Descrição] | 1. [Critério 1] <br> 2. [Critério 2] |
-| **RF05** | [Nome RF05] | [Descrição] | 1. [Critério 1] <br> 2. [Critério 2] |
-| **RF06** | [Nome RF06] | [Descrição] | 1. [Critério 1] <br> 2. [Critério 2] |
-| **RF07** | [Nome RF07] | [Descrição] | 1. [Critério 1] <br> 2. [Critério 2] |
-| **RF08** | [Nome RF08] | [Descrição] | 1. [Critério 1] <br> 2. [Critério 2] |
-| **RF09** | [Nome RF09] | [Descrição] | 1. [Critério 1] <br> 2. [Critério 2] |
-| **RF10** | [Nome RF10] | [Descrição] | 1. [Critério 1] <br> 2. [Critério 2] |
+O **SITRIB** é uma plataforma de inteligência fiscal desenvolvida para otimizar e humanizar a gestão e cobrança da **Dívida Ativa Municipal de Palmas/TO**, cruzando dados fiscais de IPTU, ISSQN e taxas com indicadores socioeconômicos censitários do IBGE.
+
+### Pilares Fundamentais:
+1. **Justiça Fiscal e Proteção Social:** Diferenciação estrita entre a **insolvência por subsistência** (periferia / Jardins Aureny e Taquari — onde o IPTU Social e parcelamentos de até 10% da renda protegem o cidadão de execuções inviáveis) e a **inadimplência por estratégia de caixa** (Plano Diretor e Orla 14 Graciosa — onde mais de 75% da dívida ativa se concentra com liquidez comprovada).
+2. **Eficiência Orçamentária:** Eliminação de execuções fiscais predatórias que custam mais aos cofres públicos (R$ 4.500 em média) do que o próprio débito executado.
+3. **Machine Learning e Scoring:** Priorização dinâmica de cobrança com modelos preditivos calibrados por split temporal sem vazamento de dados.
 
 ---
 
-## 2.4. Requisitos Não Funcionais (RNF)
-*(A ser preenchido pela Vitória)*
+## 🏗️ Arquitetura da Solução
 
-| ID | Categoria | Descrição da Restrição | Métrica / Forma de Teste |
-| :--- | :--- | :--- | :--- |
-| **RNF01** | Tecnologia / Backend | O sistema deve ser desenvolvido utilizando a linguagem Python e estruturado no padrão MVC. | Compatível com Python 3.12+. |
-| **RNF02** | Portabilidade | As dependências devem estar isoladas no manifesto de pacotes. | Instalação com comando padrão via `requirements.txt`. |
-| **RNF03** | [Categoria] | [Descrição] | [Métrica] |
+```text
+┌────────────────────────────────────────────────────────────────────────┐
+│                          FLUXO GERAL DO SITRIB                         │
+└────────────────────────────────────────────────────────────────────────┘
+
+  [ Portal NUCLEOGOV ]    [ API IBGE Palmas ]
+  (180k+ Lançamentos)     (Setores Censitários)
+          │                        │
+          ▼                        ▼
+ ┌──────────────────────────────────────────────────────────┐
+ │  MÓDULO DE COLETA & PIPELINE ETL (src/coleta & src/etl)   │
+ │  - Rate-limit ético (0.3s) e captura de cookies de sessão │
+ │  - Camadas: data/bruto/ ➔ data/limpo/ ➔ data/pronto/     │
+ │  - Expurgo de dados pessoais sensíveis (Anonimização)    │
+ └────────────────────────────┬─────────────────────────────┘
+                              │
+                              ▼
+ ┌──────────────────────────────────────────────────────────┐
+ │      INTELIGÊNCIA ARTIFICIAL & SCORING (models/ & src/)  │
+ │  - Split temporal estrito (Treino até 2022 / Teste 2024) │
+ │  - Modelos: Regressão Logística, Decision Tree,          │
+ │             Random Forest (85,5%) e XGBoost (84,9%)      │
+ │  - Scoring de Recuperabilidade (Alta, Média, Baixa)      │
+ └────────────────────────────┬─────────────────────────────┘
+                              │
+                              ▼
+ ┌──────────────────────────────────────────────────────────┐
+ │          PAINEL INTERATIVO MVP (Streamlit app.py)        │
+ │  - Ranking de devedores por prioridade                   │
+ │  - Mapa geoespacial de calor da inadimplência            │
+ │  - Simulador de impacto de arrecadação potencial         │
+ └──────────────────────────────────────────────────────────┘
+```
 
 ---
 
-## 2.5. Matriz de Priorização MoSCOW
+## 📁 Estrutura de Diretórios
 
-*   **Must Have:** [Preencher]
-*   **Should Have:** [Preencher]
-*   **Could Have:** [Preencher]
-*   **Won't Have:** [Preencher]
+```text
+projeto_integrador_II/
+├── data/                        # Ciclo de vida dos dados (Medalhão)
+│   ├── bruto/                   # Camada Bronze: JSONs datados da API
+│   ├── limpo/                   # Camada Silver: Dados limpos e padronizados
+│   └── pronto/                  # Camada Gold: Base pronta para IA
+│
+├── docs/                        # Documentação Técnica das Sprints
+│   ├── requisitos_sprint1.md    # Sprint 1: Requisitos RF/RNF e MoSCoW
+│   ├── resumo_entregas_sprint2.md # Sprint 2: Modelagem relacional e SQL
+│   ├── manual_coleta_palmas.md  # Sprint 3: Manual oficial de coleta NUCLEOGOV
+│   ├── relatorio_sprint3_pipeline_etl.md # Sprint 3: Relatório de ETL e camadas
+│   ├── relatorio_eda_inadimplencia.md   # Sprint 3: Análise exploratória descritiva
+│   ├── mapa_inadimplencia_palmas.html   # Sprint 3: Mapa geoespacial interativo
+│   └── relatorio_sprint4_modelos_mvp.md # Sprint 4: Avaliação de IA e métricas
+│
+├── models/                      # Modelos serializados e scripts de treino
+│   ├── decision_tree_baseline.joblib
+│   ├── logistic_regression_baseline.joblib
+│   ├── random_forest_debt_model.joblib  # Modelo campeão (F1: 91,67%)
+│   ├── xgboost_debt_model.joblib
+│   ├── model_metrics.json       # Métricas consolidadas
+│   └── train_models.py          # Script de treinamento
+│
+├── notebooks/                   # Notebooks Jupyter da esteira de dados
+│   ├── eda_inadimplencia.ipynb
+│   └── sprint4_modelos_ia_scoring.ipynb
+│
+├── src/                         # Código-fonte modular da aplicação
+│   ├── coleta/                  # Coletor HTTP do Portal Novo e API antiga
+│   ├── etl/                     # Orquestrador de transformação e IBGE
+│   ├── scoring/                 # Motor de regras de recuperabilidade
+│   ├── pipeline/                # Pipeline de inferência em produção
+│   └── models.py                # Entidades e dataclasses de domínio
+│
+├── tests/                       # Suíte de testes automatizados com Pytest
+├── app.py                       # Interface web interativa em Streamlit (MVP)
+├── requirements.txt             # Dependências Python isoladas
+└── README.md                    # Visão geral da plataforma
+```
 
 ---
 
-## 2.6. Comprovação de Contribuições no Git
-*(A ser preenchido por Hyago e Maiara)*
+## 🚀 Como Executar o Projeto
 
-Os prints de colaboração devem ser salvos na pasta `docs/`.
+### 1. Clonar o Repositório e Criar Ambiente Virtual
 
-![Histórico de Commits](./docs/historico_commits.png)
-![Contribuidores](./docs/contribuidores.png)
+```bash
+git clone https://github.com/ludmyllateixeira-dot/projeto_integrador_II.git
+cd projeto_integrador_II
+
+python -m venv venv
+# No Windows:
+.\venv\Scripts\activate
+# No Linux/Mac:
+source venv/bin/activate
+```
+
+### 2. Instalar Dependências
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Executar o Pipeline ETL (Sprint 3)
+
+```bash
+# Executa a coleta, limpeza, enriquecimento e geração da base pronta
+python src/etl/etl_sefin.py
+```
+
+### 4. Treinar os Modelos de Machine Learning (Sprint 4)
+
+```bash
+# Treina os baselines, Random Forest e XGBoost com split temporal
+python models/train_models.py
+```
+
+### 5. Iniciar o Painel Interativo MVP (Streamlit)
+
+```bash
+streamlit run app.py
+```
+Acesse no seu navegador: `http://localhost:8501`.
+
+### 6. Executar os Testes Automatizados
+
+```bash
+pytest
+```
+
+---
+
+## 📚 Índice de Documentação Detalhada
+
+* 📋 **Sprint 1 — Requisitos e Setup Ágil:** [`docs/requisitos_sprint1.md`](docs/requisitos_sprint1.md)
+* 🗄️ **Sprint 2 — Banco Relacional e Arquitetura:** [`docs/resumo_entregas_sprint2.md`](docs/resumo_entregas_sprint2.md)
+* 🌐 **Sprint 3 — Manual de Coleta NUCLEOGOV:** [`docs/manual_coleta_palmas.md`](docs/manual_coleta_palmas.md)
+* ⚙️ **Sprint 3 — Relatório do Pipeline ETL:** [`docs/relatorio_sprint3_pipeline_etl.md`](docs/relatorio_sprint3_pipeline_etl.md)
+* 📊 **Sprint 3 — Relatório de Análise Exploratória (EDA):** [`docs/relatorio_eda_inadimplencia.md`](docs/relatorio_eda_inadimplencia.md)
+* 🗺️ **Sprint 3 — Mapa Geoespacial de Calor:** [`docs/mapa_inadimplencia_palmas.html`](docs/mapa_inadimplencia_palmas.html)
+* 🤖 **Sprint 4 — Relatório de Modelos de IA e MVP:** [`docs/relatorio_sprint4_modelos_mvp.md`](docs/relatorio_sprint4_modelos_mvp.md)
+
+---
+
+*Projeto Integrador UFT — Ciência da Computação / BIINAR — Palmas/TO — 2026*
