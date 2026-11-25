@@ -166,6 +166,7 @@ pytest
 
 ## 📚 Índice de Documentação Detalhada
 
+* 📑 **Relatório Consolidado Geral (Sprints 1 a 4) [PDF Completo]:** [`docs/Relatorio_Consolidado_Sprints_1_a_4_SITRIB.pdf`](docs/Relatorio_Consolidado_Sprints_1_a_4_SITRIB.pdf)
 * 📋 **Sprint 1 — Requisitos e Setup Ágil:** [`docs/requisitos_sprint1.md`](docs/requisitos_sprint1.md)
 * 🗄️ **Sprint 2 — Banco Relacional e Arquitetura:** [`docs/resumo_entregas_sprint2.md`](docs/resumo_entregas_sprint2.md)
 * 🌐 **Sprint 3 — Manual de Coleta NUCLEOGOV:** [`docs/manual_coleta_palmas.md`](docs/manual_coleta_palmas.md)

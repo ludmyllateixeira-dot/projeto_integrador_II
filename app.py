@@ -167,7 +167,9 @@ st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MODELS_DIR = os.path.join(BASE_DIR, "models")
 DATA_DIR = os.path.join(BASE_DIR, "data")
+DOCS_DIR = os.path.join(BASE_DIR, "docs")
 DEFAULT_DATA_FILE = os.path.join(DATA_DIR, "divida_ativa_palmas.csv")
+CONSOLIDATED_PDF_FILE = os.path.join(DOCS_DIR, "Relatorio_Consolidado_Sprints_1_a_4_SITRIB.pdf")
 
 @st.cache_data(show_spinner="Carregando base de dados tributários...")
 def load_data(file_source=None):
@@ -271,7 +273,18 @@ st.sidebar.image(
     width=64
 )
 st.sidebar.markdown("## **SEFIN Palmas**")
-st.sidebar.caption("Inteligência Tributária • Dívida Ativa | Sprint 4 (UFT BIINAR)")
+st.sidebar.caption("Inteligência Tributária • Dívida Ativa | UFT BIINAR")
+
+if os.path.exists(CONSOLIDATED_PDF_FILE):
+    with open(CONSOLIDATED_PDF_FILE, "rb") as f_pdf:
+        st.sidebar.download_button(
+            label="📄 Baixar Relatório (Sprints 1 a 4)",
+            data=f_pdf.read(),
+            file_name="Relatorio_Consolidado_Sprints_1_a_4_SITRIB.pdf",
+            mime="application/pdf",
+            use_container_width=True,
+            help="Download do relatório técnico consolidado para apresentação da banca acadêmica."
+        )
 
 st.sidebar.markdown("---")
 st.sidebar.subheader("🤖 Modelos Preditivos (/models)")
@@ -452,17 +465,12 @@ st.sidebar.markdown(
 # ======================================================================================
 
 st.markdown(
-    f"""
+    """
     <div class="sefin-header">
-        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
             <div>
                 <h1>Secretaria Municipal de Finanças de Palmas — SEFIN</h1>
                 <p>Painel Inteligente de Priorização e Scoring de Recuperabilidade da Dívida Ativa</p>
-                <span class="badge-sprint">Sprint 4 • MVP Operacional de IA (UFT BIINAR)</span>
-            </div>
-            <div style="text-align: right; margin-top: 8px;">
-                <span style="font-size: 0.85rem; color: #bae6fd;">Modelo Ativo no Backend:</span><br>
-                <strong style="color: #ffffff; font-size: 0.95rem;">{active_model_name}</strong>
             </div>
         </div>
     </div>
@@ -1157,7 +1165,18 @@ with tab_simulador:
 
 with tab_governanca:
     st.subheader("🔬 Metodologia de IA, Auditoria Algorítmica e Conformidade Ética")
-    st.caption("Documentação técnica e científica referente à Sprint 4 do Projeto Integrador Eixo II (BIINAR / UFT - SEFIN Palmas).")
+    st.caption("Documentação técnica e científica referente ao Projeto Integrador Eixo II (BIINAR / UFT - SEFIN Palmas).")
+
+    if os.path.exists(CONSOLIDATED_PDF_FILE):
+        with open(CONSOLIDATED_PDF_FILE, "rb") as f_pdf:
+            st.download_button(
+                label="📥 Baixar Relatório Técnico Completo (Sprints 1 a 4) em PDF",
+                data=f_pdf.read(),
+                file_name="Relatorio_Consolidado_Sprints_1_a_4_SITRIB.pdf",
+                mime="application/pdf",
+                use_container_width=True,
+                help="Download do documento acadêmico e técnico unificado com o resumo de todas as 4 sprints."
+            )
 
     st.markdown(
         """
